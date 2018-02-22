@@ -2,12 +2,15 @@ body {
     width: 960px;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
     color: #777777;
-    margin: 18px;
+    background-image: url("../images/stonehaven.png");
 }
 
-header {
+header, section, aside {
     background-color: #ffffff;
-    padding: 24px;
+}
+
+section, aside {
+    margin-top: 24px;
 }
 
 h1, h2, h3 {
@@ -26,6 +29,7 @@ section {
 
 aside {
     width: 270px;
+    height: 200px;
     float: right;
 }
 
@@ -40,8 +44,8 @@ h1 {
 }
 
 header nav {
-    margin-left: 75%;
     padding: 36px 12px;
+    float: right;
 }
 
 footer {
@@ -57,3 +61,4 @@ nav img {
 nav a {
     text-decoration: #777777; 
 }
+
