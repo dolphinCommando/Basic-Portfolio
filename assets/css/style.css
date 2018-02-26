@@ -4,7 +4,6 @@ body {
     font-size: 18px;
     font-weight: 200;
     line-height: 1.5em;
-    letter-spacing: 1px;
     background-image: url("../images/swirl_pattern.png");   
 }
 
@@ -44,16 +43,15 @@ aside {
     margin-left: 40px;
 }
 
-nav img {
+aside img {
     width: 60px; 
     height: 60px;
     margin: 10px 0px 10px 0px;
 }
 
-h1, figcaption {
+h1, .flexbox p {
     background-color: #4aaaa5;
     color: #ffffff;
-    display: inline-block;
 }
 
 header, h2, h3 {
@@ -70,6 +68,13 @@ header {
     flex-direction: row;
     align-items: center;
 }
+
+a[href="index.html"], a[href="portfolio.html"] {
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0px 2px 0px 0px;
+}
+
 
 h1 {
     margin: auto 300px auto 150px;
@@ -89,7 +94,7 @@ header a {
 h2, h3 {
     border-width: 0px 0px 2px 0px;
     margin: 5px 15px 10px 15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     color: #4aaaa5;
 }
 
@@ -112,25 +117,29 @@ section img {
     margin-left: 15px;
 }
 
-
-
-a[href="index.html"], a[href="portfolio.html"] {
-    border-style: solid;
-    border-color: #cccccc;
-    border-width: 0px 2px 0px 0px;
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-
-figure img {
-    padding: 20px 0px 20px 0px;
+.flexbox img {
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-figcaption {
+.flexbox p {
     width: 200px;
-    padding: 15px 0px 15px 0px; 
+    height: 30px;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    bottom: 90px;
-    left: 15px;
+    bottom: 75px;
+    left: 30px;
     
 }
 form p {
