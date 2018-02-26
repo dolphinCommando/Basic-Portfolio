@@ -88,8 +88,13 @@ h1 {
 }
 
 header a {
-    text-decoration: #777777; 
+    text-decoration: none; 
+    color: #777777;
     padding: 0px 10px 0px 10px;
+}
+
+header a:focus {
+    color: #4aaaa5;
 }
 
 h2, h3 {
